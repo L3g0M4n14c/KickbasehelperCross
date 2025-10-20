@@ -69,22 +69,47 @@ Die App verwendet das Provider-Pattern für State Management:
 
 ## Unterschiede zur Swift-Version
 
-Diese Flutter/Dart-Version ist eine funktionsäquivalente Implementierung der originalen Swift iOS-App mit folgenden Anpassungen:
+Diese Flutter/Dart-Version ist eine funktionsäquivalente Implementierung der originalen Swift iOS-App ([Kickbasehelper](https://github.com/L3g0M4n14c/Kickbasehelper)) mit folgenden Anpassungen:
 
 1. **Plattformunabhängig**: Läuft auf iOS, Android, Web, Windows, macOS und Linux
 2. **Provider statt Combine**: Verwendet Flutter's Provider-Package statt SwiftUI's Combine
 3. **Material Design**: Nutzt Material Design statt iOS-spezifische UI-Komponenten
 4. **Vereinfachte API**: Fokus auf die Kernfunktionen
 
+### Feature-Vergleich
+
+| Feature | Swift Version | Flutter Version | Status |
+|---------|--------------|-----------------|--------|
+| Authentifizierung | ✅ | ✅ | Vollständig |
+| Team-Übersicht | ✅ | ✅ | Vollständig |
+| Markt-Ansicht | ✅ | ✅ | Vollständig |
+| Verkaufsempfehlungen | ✅ | ✅ | Vollständig |
+| Aufstellungs-Optimierer | ✅ | ✅ | Vollständig |
+| Liga-Auswahl | ✅ | ✅ | Vollständig |
+| Spieler-Details | ✅ | ⏳ | Geplant |
+| Transfer-Empfehlungen | ✅ | ⏳ | Geplant |
+| Push-Benachrichtigungen | ✅ | ⏳ | Geplant |
+| Offline-Caching | ✅ | ⏳ | Geplant |
+
 ## Zukünftige Erweiterungen
 
-- [ ] Authentifizierung implementieren
-- [ ] Liga-Auswahl hinzufügen
-- [ ] Detailansicht für Spieler
-- [ ] Push-Benachrichtigungen
+- [ ] Spieler-Detailansicht mit Statistiken und Charts
+- [ ] Transfer-Empfehlungen mit KI/ML
+- [ ] Push-Benachrichtigungen für wichtige Events
 - [ ] Offline-Modus mit Caching
 - [ ] Statistik-Charts und Visualisierungen
-- [ ] Transfer-Empfehlungen mit KI
+- [ ] Dark Mode
+- [ ] Mehrsprachigkeit (DE/EN)
+- [ ] Widget-Support für iOS/Android
+- [ ] Desktop-optimierte Layouts
+
+## Beitragen
+
+Beiträge sind willkommen! Bitte erstelle einen Pull Request oder öffne ein Issue für Vorschläge.
+
+## Verwandte Projekte
+
+- [Kickbasehelper (Swift/iOS)](https://github.com/L3g0M4n14c/Kickbasehelper) - Die originale iOS-Version
 
 ## Lizenz
 
