@@ -22,7 +22,10 @@ class KickbaseHelperApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Kickbase Helper',
-      theme: ThemeData(primarySwatch: Colors.green),
+      theme: ThemeData(
+        primarySwatch: Colors.green,
+        useMaterial3: true,
+      ),
       home: const MainDashboard(),
     );
   }
@@ -38,7 +41,7 @@ class MainDashboard extends StatefulWidget {
 class _MainDashboardState extends State<MainDashboard> {
   int _selectedIndex = 0;
 
-  static final List<Widget> _tabs = <Widget>[
+  static const List<Widget> _tabs = <Widget>[
     TeamView(),
     MarketView(),
     SalesRecommendationView(),
@@ -48,7 +51,10 @@ class _MainDashboardState extends State<MainDashboard> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Kickbase Helper')), 
+      appBar: AppBar(
+        title: const Text('Kickbase Helper'),
+        elevation: 2,
+      ),
       body: _tabs[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         type: BottomNavigationBarType.fixed,
